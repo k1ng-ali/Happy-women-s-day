@@ -37,9 +37,9 @@ body {
 }
 
 .animated_march_text {
-    padding-top: 500px;
+    padding-top: 2em;
     font-family: Arial, sans-serif;
-    font-size: 70px;
+    font-size: 6em;
     background: linear-gradient(to bottom, #4ad382, #3faeec);
     -webkit-background-clip: text; /* Для кроссбраузерной поддержки */
     -webkit-text-fill-color: transparent; /* Для кроссбраузерной поддержки */
