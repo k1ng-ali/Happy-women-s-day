@@ -31,6 +31,40 @@ body {
     background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, black 0px, black 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, black 0px, black 19px, transparent 19px, transparent 22px), linear-gradient(90deg, #00fffa, #f0f0f0);
 }
 
+.march_text {
+    position: relative;
+    text-align: center;
+}
+
+.animated_march_text {
+    padding-top: 500px;
+    font-family: Arial, sans-serif;
+    font-size: 70px;
+    background: linear-gradient(to bottom, #4ad382, #3faeec);
+    -webkit-background-clip: text; /* Для кроссбраузерной поддержки */
+    -webkit-text-fill-color: transparent; /* Для кроссбраузерной поддержки */
+    opacity: 0;
+    animation: appear 1s ease forwards, move 3s ease infinite alternate;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
 .flowers {
     position: relative;
     transform: scale(0.7);
